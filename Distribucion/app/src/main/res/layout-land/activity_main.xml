@@ -1,0 +1,78 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/change"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/batman"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="15dp"
+        android:columnCount="3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/change"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageBatman"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:src="@mipmap/batman"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageSuperman"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:src="@mipmap/superman"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageFlash"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:src="@mipmap/flash"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageGA"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:src="@mipmap/greenarrow"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageWW"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:src="@mipmap/wonderwoman"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageGL"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:src="@mipmap/greenlanter"
+            android:scaleType="centerCrop" />
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

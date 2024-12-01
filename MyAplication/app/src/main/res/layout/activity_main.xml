@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario: Genesis"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntos: 0"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo restante: 01:15"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/timer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Aquí agregar los botones para las imágenes, un ejemplo para uno: -->
+
+        <ImageButton
+            android:id="@+id/frente"
+            android:layout_width="93dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Memory card"
+            android:src="@mipmap/frente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/score" />
+
+        <ImageButton
+            android:id="@+id/cethosiabiblis1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/frente_background"
+            android:contentDescription="Memory card"
+            android:src="@mipmap/cethosiabiblis1"/>
+
+        <ImageButton
+            android:id="@+id/graphiumagamemnon_background"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/frente_background"
+            android:contentDescription="Memory card"
+            android:src="@mipmap/graphiumagamemnon"/>
+
+        <ImageButton
+            android:id="@+id/hebomoia_background"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/frente_background"
+            android:contentDescription="Memory card"
+            android:src="@mipmap/hebomoia"/>
+
+        <ImageButton
+            android:id="@+id/hypolimnas_background"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/frente_background"
+            android:contentDescription="Memory card"
+            android:src="@mipmap/hypolimnas"/>
+
+
+        <!-- Repite esto para todos los botones que necesites -->
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

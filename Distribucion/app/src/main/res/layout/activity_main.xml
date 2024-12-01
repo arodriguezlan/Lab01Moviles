@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tema" />
+
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/change"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:src="@mipmap/batman"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="50dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="204dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageBatman"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:src="@mipmap/batman"
+                android:layout_marginRight="100dp"/>
+
+            <ImageView
+                android:id="@+id/imageSuperman"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:src="@mipmap/superman"
+                android:layout_marginLeft="-130dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageFlash"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:src="@mipmap/flash"
+                android:layout_marginRight="100dp"/>
+
+            <ImageView
+                android:id="@+id/imageGA"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:src="@mipmap/greenarrow"
+                android:layout_marginLeft="-130dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageWW"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:src="@mipmap/wonderwoman"
+                android:layout_marginRight="100dp"/>
+
+            <ImageView
+                android:id="@+id/imageGL"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:src="@mipmap/greenlanter"
+                android:layout_marginLeft="-130dp"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>
